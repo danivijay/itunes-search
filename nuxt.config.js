@@ -4,7 +4,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'itunes-search',
+    title: 'iTunes search',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -27,9 +27,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: [
-      '~/plugins/vuetify.js'
-    ],
+    vendor: ['~/plugins/vuetify.js', 'axios'],
     extractCSS: true,
     /*
     ** Run ESLint on save
