@@ -9,6 +9,15 @@
             v-model="searchString"
           ></v-text-field>
         </v-card-text>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+            <v-btn
+              class="pink"
+              @click="onSearch"
+            >
+            Search
+            </v-btn>
+        </v-card-actions>
       </v-card>
     </v-flex>
   </v-layout>

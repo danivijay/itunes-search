@@ -1,9 +1,9 @@
 export const state = () => ({
-  sidebar: false
+  album: []
 })
 
 export const mutations = {
-  toggleSidebar (state) {
-    state.sidebar = !state.sidebar
+  add (state, payload) {
+    state.albums = payload
   }
 }
