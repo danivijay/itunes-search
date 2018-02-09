@@ -6,19 +6,19 @@
       >
     <v-layout row wrap>
       <v-flex xs12>
-        <v-card color="purple" class="white--text">
+        <v-card target="_blank" :href="url" color="purple" class="white--text">
           <v-container fluid grid-list-lg>
             <v-layout row>
               <v-flex xs7>
                 <div>
-                  <div class="headline">Halycon Days</div>
-                  <div>Ellie Goulding</div>
+                  <div class="headline">{{ collection }}</div>
+                  <div>{{ artist }}</div>
                 </div>
               </v-flex>
               <v-flex xs5>
                   <v-card-media
-                    src="/static/doc-images/cards/halcyon.png"
-                    height="125px"
+                    :src="imageUrl"
+                    height="100px"
                     contain
                   ></v-card-media>
               </v-flex>
@@ -32,7 +32,7 @@
 
 <script>
 export default {
-
+  props: ['artist', 'collection', 'url', 'imageUrl']
 }
 </script>
 
