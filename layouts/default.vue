@@ -1,7 +1,7 @@
 <template>
   <v-app dark>
     <v-toolbar fixed app>
-      <v-toolbar-title v-text="title"></v-toolbar-title>
+      <router-link tag="v-toolbar-title" to="/" v-text="title"></router-link>
       <v-spacer></v-spacer>
       <v-btn to="/"
         fab
